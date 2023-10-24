@@ -1,0 +1,39 @@
+.explorer {
+  cursor: pointer;
+  margin-block: 10px;
+  font-weight: 400;
+}
+.explorer__file {
+  margin-block: 10px;
+}
+.explorer__folder[data-expanded="false"] {
+  display: none;
+}
+.explorer__folder {
+  display: block;
+  margin-left: 20px;
+}
+.primary_icon {
+  font-size: 1.3rem;
+  margin-bottom: -5px;
+  color: black;
+}
+.secondary_icon {
+  opacity: 0;
+  font-size: 1.1rem;
+  padding-inline: 3px;
+  margin-bottom: -3px;
+  transition: opacity 0.05s ease;
+}
+.explorer__root:hover .secondary_icon {
+  opacity: 1;
+  visibility: visible;
+  color: grey;
+}
+
+input {
+  height: 1.3rem;
+  font-size: 1rem;
+  margin-left: 5px;
+  outline: none;
+}
